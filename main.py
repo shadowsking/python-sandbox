@@ -9,7 +9,7 @@ def download_on_mac():
 
 
 def download_on_mac_two():
-    subprocess.run(["python", "-m", "ffmpeg_downloader", "install", "snapshot", "-y"])
+    subprocess.run([sys.executable, "-m", "ffmpeg_downloader", "install", "snapshot", "-y"])
 
 
 def uninstall():
@@ -17,7 +17,7 @@ def uninstall():
 
 
 def uninstall_two():
-    subprocess.run(["python", "-m", "ffmpeg_downloader", "uninstall", "-y"])
+    subprocess.run([sys.executable, "-m", "ffmpeg_downloader", "uninstall", "-y"])
 
 
 if __name__ == "__main__":
